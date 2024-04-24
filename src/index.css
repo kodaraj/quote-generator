@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Kalam", cursive;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color: #141e46;
+  background-color: #fff5e0;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#root {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
