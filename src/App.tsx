@@ -3,7 +3,7 @@ import { useState } from "react";
 import quotes from "./quotes.json";
 import TailwindcssButton from "./components/TailwindcssButtons";
 import { TextGenerateEffect } from "./components/TextGenerateEffect";
-// import { TextGenerateEffectDemo } from "./components/TextGenerateEffectDemo";
+import quoteIcon from "./assets/quotes.png";
 
 function App() {
   const [randomQuote, setRandomQuote] = useState<string>(() => {
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="flex flex-col h-full justify-around items-center gap-12 relative">
       <img
-        src="./src/assets/quotes.png"
+        src={quoteIcon}
         className=" pointer-events-none absolute top-20 left-24 aspect-square w-1/4 -translate-x-1/2 rounded-full opacity-10 blur-sm"
       />
 
