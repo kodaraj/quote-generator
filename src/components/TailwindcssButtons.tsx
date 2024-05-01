@@ -1,6 +1,11 @@
 "use client";
 
-export default function TailwindcssButton({ setRandomQuote, quotes }) {
+interface Props {
+  setRandomQuote: React.Dispatch<React.SetStateAction<string>>;
+  quotes: string[];
+}
+
+const TailwindcssButton: React.FC<Props> = ({ setRandomQuote, quotes }) => {
   function quoteHandler() {
     setRandomQuote(quotes[Math.floor(Math.random() * quotes.length)]);
   }
@@ -13,4 +18,6 @@ export default function TailwindcssButton({ setRandomQuote, quotes }) {
       <span className="relative text-lg">Generate</span>
     </button>
   );
-}
+};
+
+export default TailwindcssButton;
